@@ -11,4 +11,9 @@ if target in numbers:
      # Remove all occurrences
     numbers = [num for num in numbers if num != target]
 
-print(numbers)
+     # Reinsert the first occurrence
+    numbers.insert(first, target)
+
+    print("Updated List:", numbers)
+else:
+    print("Number not found in the list.")
