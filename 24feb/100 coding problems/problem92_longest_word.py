@@ -1,0 +1,18 @@
+# Problem 92: Find longest word in a sentence
+
+sentence = input()
+words = sentence.split()
+
+longest = words[0]
+
+for word in words:
+    if len(word) > len(longest):
+        longest = word
+
+print(longest)
+
+# Example Input:
+# I love programming in python
+
+# Output:
+# programming
